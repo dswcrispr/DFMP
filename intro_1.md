@@ -67,37 +67,88 @@ cor.test(data[, 2], data[, 4])
 
 ``` r
 # 코스피 거래량과 채권 거래량
-cor.test(data[, 2], data[, 4])
+cor.test(data[, 2], data[, 5])
 ```
 
     ## 
     ##  Pearson's product-moment correlation
     ## 
-    ## data:  data[, 2] and data[, 4]
-    ## t = 0.74955, df = 52, p-value = 0.4569
+    ## data:  data[, 2] and data[, 5]
+    ## t = -1.0651, df = 52, p-value = 0.2917
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.1690530  0.3611503
+    ##  -0.3982973  0.1265934
     ## sample estimates:
-    ##       cor 
-    ## 0.1033875
+    ##        cor 
+    ## -0.1461202
 
 ``` r
 # 코스피 거래량과 본원통화량
-cor.test(data[, 2], data[, 4])
+cor.test(data[, 2], data[, 6])
 ```
 
     ## 
     ##  Pearson's product-moment correlation
     ## 
-    ## data:  data[, 2] and data[, 4]
-    ## t = 0.74955, df = 52, p-value = 0.4569
+    ## data:  data[, 2] and data[, 6]
+    ## t = 4.9189, df = 52, p-value = 9.142e-06
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.1690530  0.3611503
+    ##  0.3483027 0.7222872
     ## sample estimates:
     ##       cor 
-    ## 0.1033875
+    ## 0.5635094
+
+``` r
+# 코스피 거래량과 M1
+cor.test(data[, 2], data[, 7])
+```
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  data[, 2] and data[, 7]
+    ## t = 7.0949, df = 52, p-value = 3.492e-09
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  0.5338304 0.8158860
+    ## sample estimates:
+    ##       cor 
+    ## 0.7013421
+
+``` r
+# 코스피 거래량과 M2
+cor.test(data[, 2], data[, 8])
+```
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  data[, 2] and data[, 8]
+    ## t = 4.7838, df = 52, p-value = 1.46e-05
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  0.3345720 0.7147692
+    ## sample estimates:
+    ##       cor 
+    ## 0.5528091
+
+``` r
+# 코스피 거래량과 대출잔액
+cor.test(data[, 2], data[, 9])
+```
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  data[, 2] and data[, 9]
+    ## t = 4.8812, df = 52, p-value = 1.042e-05
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  0.3445025 0.7202153
+    ## sample estimates:
+    ##       cor 
+    ## 0.5605551
 
 ``` r
 # 코스피 거래량 월별 변화율과 환율 변화율

@@ -59,10 +59,20 @@ cor(data[-1, 10:17]) %>% corrplot(method = 'color', type = 'upper',
 cor.test(data[, 2], data[, 4])
 
 # 코스피 거래량과 채권 거래량
-cor.test(data[, 2], data[, 4])
+cor.test(data[, 2], data[, 5])
 
 # 코스피 거래량과 본원통화량
-cor.test(data[, 2], data[, 4])
+cor.test(data[, 2], data[, 6])
+
+# 코스피 거래량과 M1
+cor.test(data[, 2], data[, 7])
+
+# 코스피 거래량과 M2
+cor.test(data[, 2], data[, 8])
+
+# 코스피 거래량과 대출잔액
+cor.test(data[, 2], data[, 9])
+
 
 # 코스피 거래량 월별 변화율과 환율 변화율
 cor.test(data[, 10], data[, 12])
